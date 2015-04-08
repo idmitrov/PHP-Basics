@@ -23,3 +23,4 @@ function sumNumbers($firstNumber, $secondNumber) {
 }
 
 sumNumbers(1.567808, 0.356);
+sumNumbers(1234.5678, 333);
