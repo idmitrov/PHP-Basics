@@ -1,0 +1,32 @@
+html, body, table, tbody, thead, tfoot, th, tr, td {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+html {
+    font: 10px 'Arial', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+table tr td {
+    padding: 1rem;
+}
+
+.table {
+    border: solid 0.1rem #000;
+}
+
+.orange {
+    background-color: orange;
+    border-bottom: solid 0.1rem #000;
+    border-right: solid 0.1rem #000;
+}
+
+.last {
+    border-bottom: 0;
+}
