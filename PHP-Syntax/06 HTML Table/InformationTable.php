@@ -6,22 +6,24 @@
 
 function drawPersonTable($name, $phoneNumber, $age, $address) {
     echo '<table class="table">'.
-            '<tr>'.
+           '<tbody>'.
+                '<tr>'.
                 '<td class="orange">'.'Name'.'</td>'.
                 '<td>'.$name.'</td>'.
-            '</tr>'.
-            '<tr>'.
+                '</tr>'.
+                '<tr>'.
                 '<td class="orange">'.'Phone number'.'</td>'.
                 '<td>'.$phoneNumber.'</td>'.
-            '</tr>'.
-            '<tr>'.
+                '</tr>'.
+                '<tr>'.
                 '<td class="orange">'.'Age'.'</td>'.
                 '<td>'.(int)$age.'</td>'.
-            '</tr>'.
-            '<tr>'.
+                '</tr>'.
+                '<tr>'.
                 '<td class="orange last">'.'Address'.'</td>'.
                 '<td>'.$address.'</td>'.
-            '</tr>'.
+                '</tr>'.
+            '</tbody>'.
         '</table>';
 }
 
