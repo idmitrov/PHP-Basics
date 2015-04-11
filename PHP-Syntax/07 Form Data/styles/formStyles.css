@@ -1,0 +1,65 @@
+html, body, div, p, form, input, label, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 10px 'Arial', sans-serif;
+    color: #000;
+}
+
+form {
+    padding: 2rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    background-color: #DDD;
+    width: 40rem;
+    border: solid 0.1rem #DDD;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+form input[type="text"] {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    display: block;
+    width: 100%;
+    height: 4rem;
+}
+
+form div{
+    margin: 1rem 0 0 0;
+    width: 8rem;
+}
+
+form div, label, input[type="radio"] {
+    cursor: pointer;
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #999;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+button {
+    color: #444;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+p {
+    color: #444;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.incorrect-input {
+    color: #F00;
+}
