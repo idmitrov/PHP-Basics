@@ -18,7 +18,7 @@
     echo '<form action="#" method="post">';
         echo '<label for="tagsInput">Tags</label>';
         echo '<input type="text" id="tagsInput" name="userInput" maxlength="100" placeholder="Tags..."/>'.
-            '<input type="submit" name="submitBtn" value="Submit">';
+            '<input class="submitBtn" type="submit" name="submitBtn" value="Submit">';
 
         if (isset($_POST['userInput']) && !ctype_space($_POST['userInput']) && $_POST['userInput'] != '') {
             $tags = explode(', ', $_POST['userInput']);

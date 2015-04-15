@@ -24,7 +24,7 @@ html {
         html body form input:first-of-type {
           font-size: 1.4rem;
           padding: 0.5rem; }
-        html body form input[type="submit"] {
+        html body form input.submitBtn {
           padding: 0.5rem; }
       html body form p {
         margin-top: 1rem;
