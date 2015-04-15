@@ -1,0 +1,41 @@
+html, body, form, input, button, p, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font: 10px 'Arial', sans-serif;
+  color: #000; }
+  html body {
+    text-align: center; }
+    html body form {
+      margin: 10% auto;
+      padding: 0.5rem;
+      background-color: #EEE;
+      width: 32rem;
+      border: solid 0.1rem #CCC; }
+      html body form label {
+        font-size: 1.4rem;
+        display: block;
+        cursor: pointer; }
+      html body form input {
+        width: 100%;
+        margin-top: 1rem; }
+        html body form input:first-of-type {
+          font-size: 1.4rem;
+          padding: 0.5rem; }
+        html body form input[type="submit"] {
+          padding: 0.5rem; }
+      html body form p {
+        margin-top: 1rem;
+        font-size: 1.4rem; }
+        html body form p.incorrect-input {
+          color: #F00; }
+        html body form p.output {
+          margin-top: 0;
+          font-weight: bold;
+          text-align: left; }
+          html body form p.output:first-of-type {
+            margin-top: 1rem; }
+
+/*# sourceMappingURL=formStyles.css.map */
