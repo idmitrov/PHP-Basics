@@ -25,23 +25,23 @@ For every valid tag entered, the score should increase by 1.
 Hint: You may use sessions. Use an array to store all valid HTML5 tags.
 */
 include 'validHtmlTags.php';
-    session_start();
+session_start();
 
-    if (isset($_GET['submit'])) {
-        if (!isset($_SESSION['score'])) {
-            $_SESSION['score'] = 0;
-        }
-
-        if (isset($_GET['input'])) {
-            $isValidTag = checkTag($_GET['input'], $validHtmlTags);
-
-            if ($isValidTag) {
-                $_SESSION['score']++;
-                echo "<p>Valid HTML tag!</p>";
-            } else {
-                echo "<p>Invalid HTML tag!</p>";
-            }
-        }
-
-        echo 'SCORE: ' . $_SESSION['score'];
+if (isset($_GET['submit'])) {
+    if (!isset($_SESSION['score'])) {
+        $_SESSION['score'] = 0;
     }
+
+    if (isset($_GET['input'])) {
+        $isValidTag = checkTag($_GET['input'], $validHtmlTags);
+
+        if ($isValidTag) {
+            $_SESSION['score']++;
+            echo "<p>Valid HTML tag!</p>";
+        } else {
+            echo "<p>Invalid HTML tag!</p>";
+        }
+    }
+
+    echo 'SCORE: ' . $_SESSION['score'];
+}
