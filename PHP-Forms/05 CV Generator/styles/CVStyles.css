@@ -1,0 +1,85 @@
+html, body, div, header, h1, h2, section, article, p, ul, li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 10px 'Times New Roman', sans-serif;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#wrapper {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 72rem;
+    font-size: 2rem;
+    background-color: #EEE;
+    border: solid 0.1rem #CCC;
+}
+
+section {
+    border: solid 0.1rem #CCC;
+    padding: 1rem;
+}
+
+article  {
+    margin-top: 1rem;
+}
+
+.col1 {
+    border-right: dashed 0.1rem #CCC;
+    padding-right: 0.5rem;
+}
+
+.col1, .col2 {
+    margin-top: 1rem;
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top;
+}
+
+.col1 li, .col2 li {
+    margin: 1rem auto;
+    width: 90%;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: rgba(155, 155, 155, 0.1);
+    font-weight: bold;
+    border: solid 0.1rem #CCC;
+    box-shadow: inset 0 0 0.1rem #CCC;
+}
+.col2Col:nth-of-type(1) {
+    margin-left: 1.4rem;
+    text-align: left;
+    border-right: dashed 0.1rem #CCC;
+}
+
+
+.col2Col {
+    display: inline-block;
+    text-align: right;
+    width: 44%;
+}
+
+.col2Col li {
+    border: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.noBorder {
+    border: none;
+}
+
+.other {
+    width: 25%;
+}
+
+.table {
+    display: inline-block;
+    margin-left: 5rem;
+}

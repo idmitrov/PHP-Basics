@@ -1,0 +1,103 @@
+html, body, p, form, input, fieldset, legend {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    text-align: center;
+}
+
+p, select {
+    margin-top: 10px;
+}
+
+select {
+    display: inline-block;
+    height: 28px;
+}
+
+form {
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    background-color: #EEE;
+    margin: auto;
+    border: solid 1px #CCC;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="datetime"] {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: solid 1px #DDD;
+}
+
+input[type="radio"], label {
+    margin-top: 10px;
+    margin-left: -5px;
+    padding: 0 8px;
+    color: #777;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type="button"],
+input[type="submit"] {
+    padding: 5px;
+    cursor: pointer;
+    border: solid 1px #CCC;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+}
+
+input[type=checkbox] {
+    margin-left: -10px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+fieldset:first-of-type > label:nth-of-type(3) {
+    display: block;
+}
+
+fieldset:last-of-type > label:nth-last-of-type(3),
+fieldset:last-of-type > label:nth-last-of-type(2),
+fieldset:last-of-type > label:nth-last-of-type(1) {
+    font-size: 14px;
+    vertical-align: baseline;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: solid 1px #CCC;
+    padding: 10px;
+    font-size: 18px;
+    color: #AAA;
+}
+fieldset:first-of-type {
+    margin-top: 0;
+}
+
+#errorBox {
+    margin: 10% auto;
+    padding: 2rem;
+    width: 20rem;
+    background-color: #EEE;
+    font-size: 1.2rem;
+    color: #F00;
+    border: solid 0.1rem #CCC;
+}
+
+#programming, #languages {
+    margin-bottom: 1rem;
+}
+
+.generateByJS {
+    margin-right: 0.3rem;
+}

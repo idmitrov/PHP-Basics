@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="./styles/formStyles.css"/>
+</head>
+<body>
+<form action="CVGenerator.php" method="get">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <input type="text" name="firstName" id="firstName" maxlength="20" placeholder="First Name" required="required"/>
+
+        <input type="text" name="lastName" id="lastName" maxlength="20" placeholder="Last Name" required="required"/>
+
+        <input type="email" name="email" id="email" placeholder="Email" required="required"/>
+
+        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+359-00-00-00 or +359 00 00 00"
+               required="required"/>
+
+        <label for="female-gender">Female</label>
+        <input type="radio" id="female-gender" name="gender" value="female" required="required"/>
+
+        <label for="male-gender">Male</label>
+        <input type="radio" name="gender" id="male-gender" value="male" checked="checked" required="required"/>
+
+        <label for="birthday">Birth Date</label>
+        <input type="datetime" name="birthday" id="birthday" placeholder="dd/mm/yyyy"/>
+
+        <label for="nation">Nationality:</label>
+        <select name="nationality" id="nation">
+            <option value="Bulgarian" selected="selected">Bulgarian</option>
+            <option value="European">European</option>
+            <option value="Romanian">Romanian</option>
+            <option value="Russian">Russian</option>
+            <option value="British">British</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Last Work Position</legend>
+
+        <label for="companyName">Company Name:</label>
+        <input type="text" name="companyName" id="companyName" placeholder="Company" maxlength="20"/>
+
+        <label for="from-date">From:</label>
+        <input type="datetime" name="workExpFrom" id="from-date" placeholder="dd/mm/yyyy"/>
+
+        <label for="to-date">To:</label>
+        <input type="datetime" name="workExpTo" id="to-date" placeholder="dd/mm/yyyy"/>
+    </fieldset>
+    <fieldset>
+        <legend>Computer Skills</legend>
+        <label for="programmingLang">Programming Languages</label>
+
+        <div id="programming">
+            <input type="text" id="programmingLang" name="programmingLang[]" placeholder="Language" maxlength="20"/>
+
+            <select name="programmingLevel[]" id="progLvl">
+                <option value="Beginner">Beginner</option>
+                <option value="Middle">Middle</option>
+                <option value="Senior">Senior</option>
+            </select>
+        </div>
+        <input type="button" id="removeProgLang" value="Remove Language"/>
+        <input type="button" id="addProgLang" value="Add Language"/>
+    </fieldset>
+    <fieldset>
+        <legend>Other Skills</legend>
+
+       <div id="languages">
+           <label for="lang">Languages:</label>
+           <input type="text" name="language[]" id="lang" maxlength="20" placeholder="Language"/>
+
+           <select name="langComprehension[]">
+               <option disabled="disabled" selected="selected" value="disabled">-Comprehension-</option>
+               <option value="beginner">Beginner</option>
+               <option value="intermediate">Intermediate</option>
+               <option value="advanced">Advanced</option>
+           </select>
+
+           <select name="langReading[]">
+               <option disabled="disabled" selected="selected" value="disabled">-Reading-</option>
+               <option value="beginner">Beginner</option>
+               <option value="intermediate">Intermediate</option>
+               <option value="advanced">Advanced</option>
+           </select>
+
+           <select name="langWriting[]">
+               <option disabled="disabled" selected="selected" value="disabled">-Writing-</option>
+               <option value="beginner">Beginner</option>
+               <option value="intermediate">Intermediate</option>
+               <option value="advanced">Advanced</option>
+           </select>
+       </div>
+
+        <input type="button" id="removeLang" value="Remove Language"/>
+        <input type="button" id="addLang" value="Add Language"/>
+
+        <p>Drive License</p>
+        <label for="licenseB">B</label>
+        <input type="checkbox" name="driveLicense[]" id="licenseB" value="B"/>
+
+        <label for="licenseA">A</label>
+        <input type="checkbox" name="driveLicense[]" id="licenseA" value="A"/>
+
+        <label for="licenseC">C</label>
+        <input type="checkbox" name="driveLicense[]" id="licenseC" value="C"/>
+    </fieldset>
+    <input type="submit" name="submit" value="Generate CV"/>
+</form>
+
+<script src="script/formControlsAddRemove.js"></script>
+</body>
+</html>
