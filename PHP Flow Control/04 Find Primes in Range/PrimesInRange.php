@@ -49,22 +49,23 @@ if (isset($_GET['submitted'])) {
     } else {
         //ELSE INPUT IS VALID
         //SET START/END
-
         $start = (int)$_GET['startIndex'];
         $end = (int)$_GET['endIndex'];
 
         //LOOP FROM START TO END
         for ($i = $start; $i <= $end; $i++) {
+            //INIT IS NOT PRIME
             $isPrime = false;
             //IF IS GREATER THAN 1 AND NON NEGATIVE
             if ($i > 1) {
+                //SET NUM TO PRIME
                 $isPrime = true;
-            }
-            //CHECK IS PRIME
-            for ($j = 2; $j < $i; $j++) {
-                if ($i % $j === 0) {
-                    $isPrime = false;
-                    break;
+                //CHECK IS PRIME
+                for ($j = 2; $j < $i; $j++) {
+                    if ($i % $j === 0) {
+                        $isPrime = false;
+                        break;
+                    }
                 }
             }
             //IF IS PRIME
