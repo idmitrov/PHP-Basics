@@ -12,10 +12,6 @@
     If the value is not an integer number, print "I cannot sum that".
 */
 
-//DEBUG
-$_GET['submitted'] = 'submit';
-//END OF DEBUG
-
 //IF ARE SET
 if (isset($_GET['submitted'], $_GET['inputString'])) {
     //IF INPUT IS NOT EMPTY
