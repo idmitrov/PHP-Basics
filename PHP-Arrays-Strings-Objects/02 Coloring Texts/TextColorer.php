@@ -18,9 +18,9 @@ if (isset($_GET['submit'], $_GET['textInput'])):
         foreach ($textLetters as $letter):
             if ($letter !== ' '):
                 if (ord($letter) % 2 === 0):
-                    echo '<span style="color: #F00">'.$letter.' '.'</span>';
+                    echo '<span style="color: #F00">'.htmlentities($letter, ENT_HTML5).' '.'</span>';
                 else:
-                    echo '<span style="color: #00F">'.$letter.' '.'</span>';
+                    echo '<span style="color: #00F">'.htmlentities($letter, ENT_HTML5).' '.'</span>';
                 endif;
             endif;
         endforeach;
