@@ -5,6 +5,12 @@
 </form>
 
 <?php
+/*
+    Write a PHP program WordMapper.php that takes a text from a textarea
+    and prints each word and the number of times it occurs in the text.
+    The search should be case-insensitive.
+    The result should be printed as an HTML table.
+*/
 if (isset($_GET['submit'], $_GET['textInput'])):
     if (strlen(trim($_GET['textInput'])) > 0) {
         $text = trim(strtolower($_GET['textInput']));
