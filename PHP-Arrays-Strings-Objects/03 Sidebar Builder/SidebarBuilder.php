@@ -35,8 +35,11 @@ if (isset($_GET['submit'], $_GET['categories'], $_GET['tags'], $_GET['months']))
                  '<ul style="list-style-type: circle">';
                     foreach($categories as $category):
                         echo '<li>'.
-                                "<a style=\"display: inline-block; padding: 6px; color: #000\" href=\"#\" title=\"$category\">$category</a>".
-                             '</li>';
+                                '<a style="display: inline-block; padding: 6px; color: #000"
+                                    href="#" title="'.htmlentities($category, ENT_HTML5).'">'.
+                                    htmlentities($category, ENT_HTML5).
+                                '</a>'.
+                            '</li>';
                     endforeach;
             echo '</ul>';
             echo '</article>';
@@ -45,8 +48,11 @@ if (isset($_GET['submit'], $_GET['categories'], $_GET['tags'], $_GET['months']))
                  '<ul style="list-style-type: circle">';
                     foreach($tags as $tag):
                         echo '<li>'.
-                                "<a style=\"display: inline-block; padding: 6px; color: #000\" href=\"#\" title=\"$tag\">$tag</a>".
-                             '</li>';
+                            '<a style="display: inline-block; padding: 6px; color: #000"
+                                href="#" title="'.htmlentities($tag, ENT_HTML5).'">'.
+                                htmlentities($tag, ENT_HTML5).
+                            '</a>'.
+                            '</li>';
                     endforeach;
             echo '</ul>';
             echo '</article>';
@@ -55,7 +61,10 @@ if (isset($_GET['submit'], $_GET['categories'], $_GET['tags'], $_GET['months']))
                  '<ul style="list-style-type: circle">';
                     foreach($months as $month):
                         echo '<li>'.
-                                "<a style=\"display: inline-block; padding: 6px; color: #000\" href=\"#\" title=\"$month\">$month</a>".
+                                '<a style="display: inline-block; padding: 6px; color: #000"
+                                    href="#" title="'.htmlentities($month, ENT_HTML5).'">'.
+                                    htmlentities($month, ENT_HTML5).
+                                '</a>'.
                              '</li>';
                     endforeach;
                 echo '</ul>';
