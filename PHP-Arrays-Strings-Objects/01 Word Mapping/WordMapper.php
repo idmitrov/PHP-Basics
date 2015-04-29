@@ -22,10 +22,10 @@ if (isset($_GET['submit'], $_GET['textInput'])):
                 echo
                     '<tr>'.
                         '<td>'.
-                            $key.
+                            htmlentities($key, ENT_HTML5).
                         '</td>'.
                         '<td>'.
-                            $value,
+                            htmlentities($value, ENT_HTML5),
                         '</td>'.
                     '</tr>';
             endforeach;
