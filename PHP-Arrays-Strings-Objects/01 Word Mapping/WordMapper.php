@@ -9,7 +9,6 @@ if (isset($_GET['submit'], $_GET['textInput'])):
     if (strlen(trim($_GET['textInput'])) > 0) {
         $text = trim(strtolower($_GET['textInput']));
         $words = array_filter(preg_split('/[\W_]+/', $text));
-        var_dump($words);
         $counter = array_count_values($words);
 
         echo '<table border="1">';
